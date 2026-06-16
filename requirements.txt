@@ -1,3 +1,5 @@
 numpy
 pandas
 streamlit
+tensorflow>=2.14.0,<2.15.0
+keras-tuner>=1.4.1
