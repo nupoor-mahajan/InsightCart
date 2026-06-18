@@ -1,20 +1,54 @@
-# InsightCart - E-Commerce Customer Sentiment Analysis
+# 🛒 InsightCart - E-Commerce Customer Sentiment Analysis
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.58-red)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19-orange)
+![Scikit--learn](https://img.shields.io/badge/Scikit--learn-ML-green)
+![Status](https://img.shields.io/badge/Status-Deployed-brightgreen)
 
 InsightCart is an NLP-powered sentiment analysis platform designed to analyze e-commerce customer reviews and classify them into **Positive**, **Negative**, and **Neutral** sentiments.
 
 The project combines **Natural Language Processing**, **Machine Learning**, **Deep Learning**, and **Interactive Data Visualization** to help understand customer opinions, product perception, rating behavior, and review patterns through a Streamlit dashboard.
 
-The platform supports dataset exploration, exploratory data analysis, and real-time sentiment prediction using multiple trained models.
-
-Live App: https://aicw-insightcart.streamlit.app/
+ [**🔗Live Demo**](https://aicw-insightcart.streamlit.app/)
 
 ---
 
-## Features
+## 📌 Table of Contents
 
-### Dataset Explorer
+* [Overview](#overview)
+* [Features](#features)
+* [Models Used](#models-used)
+* [Technology Stack](#technology-stack)
+* [Project Structure](#project-structure)
+* [Workflow](#workflow)
+* [Installation](#installation)
+* [Using uv](#using-uv)
+* [Deployment](#deployment)
+* [Team Members](#team-members)
+* [Future Enhancements](#future-enhancements)
+* [License](#license)
+* [Acknowledgements](#acknowledgements)
+
+---
+
+## 📖 Overview
+
+InsightCart is built to help businesses understand customer feedback at scale. By analyzing customer reviews, the system helps identify customer satisfaction patterns, frequent complaints, product perception, and overall sentiment trends.
+
+The platform supports:
+
+* Dataset exploration
+* Exploratory data analysis
+* Text preprocessing
+* Sentiment prediction using multiple trained models
+* Interactive Streamlit dashboard deployment
+
+---
+
+## ✨ Features
+
+### 📁 Dataset Explorer
 
 * Interactive customer review dataset viewer
 * Sentiment-based filtering
@@ -22,7 +56,7 @@ Live App: https://aicw-insightcart.streamlit.app/
 * Sentiment distribution visualization
 * Review length analysis by sentiment
 
-### Exploratory Data Analysis
+### 📊 Exploratory Data Analysis
 
 * Customer sentiment distribution
 * Rating distribution
@@ -31,7 +65,7 @@ Live App: https://aicw-insightcart.streamlit.app/
 * Dataset summary and column information
 * Interactive Plotly visualizations
 
-### Sentiment Prediction
+### 🤖 Sentiment Prediction
 
 InsightCart provides separate prediction screens for each trained model:
 
@@ -46,7 +80,7 @@ Each model page allows the user to enter a customer review and receive:
 * Confidence score
 * Inference time
 
-### NLP Preprocessing
+### 🧹 NLP Preprocessing
 
 * Text lowercasing
 * Contraction expansion
@@ -59,49 +93,33 @@ Each model page allows the user to enter a customer review and receive:
 
 ---
 
-## Models Used
+## 🧠 Models Used
 
-### Random Forest
-
-A classical machine learning baseline model trained using TF-IDF features.
-
-### Hyperparameter Tuned Random Forest
-
-An optimized Random Forest model using tuned parameters for improved performance.
-
-### XGBoost
-
-A gradient boosting model trained on TF-IDF features for strong classification performance.
-
-### LSTM
-
-A deep learning sequence model trained using tokenized customer reviews.
+| Model                              | Type             | Description                                                   |
+| ---------------------------------- | ---------------- | ------------------------------------------------------------- |
+| Random Forest                      | Machine Learning | Classical baseline model trained using TF-IDF features        |
+| Hyperparameter Tuned Random Forest | Machine Learning | Optimized Random Forest model with tuned parameters           |
+| XGBoost                            | Machine Learning | Gradient boosting model trained on TF-IDF features            |
+| LSTM                               | Deep Learning    | Sequence-based neural network trained using tokenized reviews |
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
-### Programming Language
-
-* Python 3.11
-
-### Libraries and Frameworks
-
-* Streamlit
-* Pandas
-* NumPy
-* Plotly
-* Scikit-learn
-* XGBoost
-* TensorFlow / Keras
-* NLTK
-* Contractions
-* Matplotlib
-* Seaborn
+| Category             | Tools                       |
+| -------------------- | --------------------------- |
+| Programming Language | Python 3.11                 |
+| Web Framework        | Streamlit                   |
+| Data Handling        | Pandas, NumPy               |
+| Visualization        | Plotly, Matplotlib, Seaborn |
+| NLP                  | NLTK, Contractions          |
+| Machine Learning     | Scikit-learn, XGBoost       |
+| Deep Learning        | TensorFlow, Keras           |
+| Deployment           | Streamlit Community Cloud   |
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 InsightCart/
@@ -149,7 +167,7 @@ InsightCart/
 
 ---
 
-## Workflow
+## 🔄 Workflow
 
 1. Load customer review dataset
 2. Clean and prepare raw review data
@@ -158,13 +176,13 @@ InsightCart/
 5. Convert text into numerical features
 6. Train machine learning and deep learning models
 7. Evaluate model performance
-8. Save trained models and vectorizers
+8. Save trained models, vectorizers, and tokenizer
 9. Build Streamlit dashboard
 10. Deploy the application for interactive sentiment prediction
 
 ---
 
-## Installation
+## ⚙️ Installation
 
 Clone the repository:
 
@@ -173,13 +191,13 @@ git clone https://github.com/nupoor-mahajan/InsightCart.git
 cd InsightCart
 ```
 
-Create and activate a virtual environment:
+Create a virtual environment:
 
 ```bash
 python -m venv .venv
 ```
 
-For Windows PowerShell:
+Activate the virtual environment on Windows PowerShell:
 
 ```bash
 .venv\Scripts\Activate.ps1
@@ -199,7 +217,7 @@ streamlit run app.py
 
 ---
 
-## Using uv
+## ⚡ Using uv
 
 If using `uv`, create the environment and install dependencies with:
 
@@ -217,15 +235,13 @@ python -m streamlit run app.py
 
 ---
 
-## Deployment
+## 🚀 Deployment
 
-The project is deployed using Streamlit Community Cloud.
+The project is deployed using **Streamlit Community Cloud**.
 
-Deployment URL:
+🔗 **Deployment URL:** [InsightCart Live App](https://aicw-insightcart.streamlit.app/)
 
-https://aicw-insightcart.streamlit.app/
-
-The deployment uses:
+Deployment files used:
 
 ```text
 requirements.txt
@@ -238,51 +254,17 @@ data/
 
 ---
 
-## Team Members
+## 👥 Team Members
 
-### Nupoor Mahajan
-
-GitHub: https://github.com/nupoor-mahajan
-
-Responsibilities:
-
-* XG-Boost Model Training
-* LSTM Model Training
-* Repository management
-* Streamlit Deployement
-
-### Akshata Naik
-
-GitHub: https://github.com/NaikAkshata30
-
-Responsibilities:
-
-* Data cleaning
-* Exploratory data analysis
-* Random Forest Model Training
-* PPT and Documentation
-
-### Hansa Gusaiwal
-
-GitHub: https://github.com/hansagusaiwal
-
-Responsibilities:
-
-* NLP Model and Data Preprocessing
-* Hyperparameter tuned Random Forest Model Training
-* Documentation
+| Team Member    | GitHub                                              | Responsibilities                                                                                   |
+| -------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Nupoor Mahajan | [nupoor-mahajan](https://github.com/nupoor-mahajan) | XGBoost model training, LSTM model training, repository management, Streamlit deployment           |
+| Akshata Naik   | [NaikAkshata30](https://github.com/NaikAkshata30)   | Data cleaning, exploratory data analysis, Random Forest model training, PPT and documentation      |
+| Hansa Gusaiwal | [hansagusaiwal](https://github.com/hansagusaiwal)   | NLP model and data preprocessing, hyperparameter tuned Random Forest model training, documentation |
 
 ---
 
-## Repository
-
-Project Repository:
-
-https://github.com/nupoor-mahajan/InsightCart
-
----
-
-## Future Enhancements
+## 🌱 Future Enhancements
 
 * Aspect-based sentiment analysis
 * Multi-language sentiment analysis
@@ -293,13 +275,13 @@ https://github.com/nupoor-mahajan/InsightCart
 
 ---
 
-## License
+## 📄 License
 
-This project is developed for academic and educational purposes as part of a Capstone Project in AICW by Edunet, sponsored by Microsoft and SAP.
+This project is developed for academic and educational purposes as part of a Capstone Project in **AICW by Edunet**, sponsored by **Microsoft** and **SAP**.
 
 ---
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 * Amazon Reviews Dataset
 * Kaggle
