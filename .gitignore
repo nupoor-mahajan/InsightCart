@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+models/hypertuned_random_forest.pkl
+mlflow.db
+notebooks/mlflow.db
+notebooks/mlruns/
