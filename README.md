@@ -186,6 +186,7 @@ GitHub: https://github.com/NaikAkshata30
 Responsibilities:
 
 * Data Cleaning
+* Model Training & Evaluation
 * Exploratory Data Analysis
 * Business Insights Generation
 
